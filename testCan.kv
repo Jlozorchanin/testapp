@@ -1,0 +1,42 @@
+CanEx5:
+#:set a 150
+<CanEx>:
+    canvas:
+        Rectangle:
+            pos: self.center_x - a/2 ,self.center_y - a/2
+            size: a, a
+        Line:
+            points:(0,0,self.width/2 - a/2,self.height/2 - a/2)  
+            width:2
+        Line:
+            points:(0,self.height,self.width/2 - a/2,self.height/2 + a/2)  
+            width:2
+        Line:
+            points:(self.width,0,self.width/2 + a/2,self.height/2 - a/2)  
+            width:2
+        Line:
+            points:(self.width,self.height,self.width/2 + a/2,self.height/2 + a/2)  
+            width:2 
+
+<CanEx2>:
+    canvas:
+        Color:
+            rgb: 1,.5,.5
+        Line:
+            # circle: (self.width/2,self.height/2,100)
+            rectangle: (200,100,300,100)
+            width:3
+
+
+
+
+# <CanEx5>:
+#     canvas.before:
+#         Rectangle:
+#             pos: self.pos
+#             size: self.size
+#             source: 'res.jpg'
+                
+#     Label: 
+#         text: 'Отскоки: ' + str(root.otbitt)
+              
